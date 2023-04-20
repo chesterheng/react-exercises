@@ -1,12 +1,17 @@
+import { useState } from "react";
 import "./App.css";
-import { users } from "./data/users";
 
 function App() {
-  const userItems = users.map(({ id, name }) => <li key={id}>{name}</li>);
+  const [show, setShow] = useState(true);
+  const handleClick = () => {
+    setShow((prev) => !prev);
+  };
   return (
     <>
-      <h3>User names</h3>
-      <ul>{userItems}</ul>
+      <button onClick={handleClick}>
+        {show ? "Hide Element Below" : "Show Element Below"}
+      </button>
+      {show && <div>Toggle Challenge</div>}
     </>
   );
 }

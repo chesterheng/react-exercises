@@ -5,6 +5,7 @@
 - Display simple JSX
 - Display array of users to browser
 - Show/Hide Element on Screen
+  - A click on button should toggle (show/hide) the string `Toggle Challenge` each time it is pressed
 - 2-way data binding in ReactJS
 - Disable a button
 - Update the parent state
